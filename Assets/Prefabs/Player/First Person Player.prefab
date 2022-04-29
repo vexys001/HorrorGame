@@ -65,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf422e2c9abbd541a2586f8be8b8511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainCamera: {fileID: 4003255408130934534}
   GroundCheck: {fileID: 4003255408459885426}
   GroundDistance: 0.4
   GroundMask:
@@ -72,6 +73,11 @@ MonoBehaviour:
     m_Bits: 8
   speed: 2
   gravity: -9.81
+  CamRayLength: 2.5
+  InteractableMask:
+    serializedVersion: 2
+    m_Bits: 64
+  DEBUG: 0
 --- !u!1 &4003255408130934532
 GameObject:
   m_ObjectHideFlags: 0

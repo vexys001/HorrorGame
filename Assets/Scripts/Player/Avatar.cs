@@ -4,34 +4,38 @@ using UnityEngine;
 
 public class Avatar : MonoBehaviour
 {
+    [Header("Components")]
     private CharacterController _cc;
+    public Camera MainCamera;
 
+
+    [Header("Ground vars")]
     public Transform GroundCheck;
     public float GroundDistance = 0.4f;
     public LayerMask GroundMask;
     private bool _isGrounded;
 
+    [Header("Speed vars")]
     public float speed = 12f;
     public float gravity = -9.81f;
     Vector3 velocity;
 
+    [Header("Scene Interaction")]
     //public UIManager UiMngr;
+    [Range(0.1f, 10f)] public float CamRayLength;
+    public LayerMask InteractableMask;
 
-    /*public GameObject ActiveRing;
-    public GameObject ActiveRingPosition;
-    public ObjectPool RingPool;
-    private bool _armed = false;
+    /*private Ray cameraRay;
+    private RaycastHit rayHit;*/
 
-    [SerializeField] private float _chargeTimer = 0;
-    [SerializeField] private int _chargeCounter = 0;
-    public int MaxchargeCounter = 2;*/
+    [Header("Debugging")]
+    public bool DEBUG = false;
 
     // Start is called before the first frame update
     void Start()
     {
         _cc = GetComponent<CharacterController>();
 
-        //AcquireRing(RingPool.RemoveObject());
     }
 
     // Update is called once per frame
@@ -56,78 +60,23 @@ public class Avatar : MonoBehaviour
 
         _cc.Move(velocity * Time.deltaTime);
 
-        //Firing Input
-        /*if (_armed)
+        RaycastHit rayHit;
+        Ray cameraRay = MainCamera.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(cameraRay, out rayHit, CamRayLength, InteractableMask.value))
         {
-            if (Input.GetMouseButton(0))
-            {
-                _chargeTimer += Time.deltaTime;
+            Transform objectHit = rayHit.transform;
 
-                if (_chargeTimer >= 1)
-                {
-                    if (_chargeCounter < MaxchargeCounter)
-                    {
-                        _chargeTimer = 0;
-                        _chargeCounter++;
-
-                        ActiveRing.GetComponent<Ring>().IncreaseDamage();
-                    }
-                    else
-                    {
-                        Shoot();
-                        _chargeTimer = 0;
-                        _chargeCounter = 0;
-                    }
-                }
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                Shoot();
-                _chargeTimer = 0;
-                _chargeCounter = 0;
-            }
-        }*/
-    }
-
-    /*void Shoot()
-    {
-        ActiveRing.SendMessage("StartShot");
-
-        ActiveRing = null;
-        _armed = false;
-
-        if (RingPool.Count() > 0)
-        {
-            AcquireRing(RingPool.RemoveObject());
-        }
-        else
-        {
-            StartCoroutine(LookForRing());
+            Debug.Log("Printing hit name: " + objectHit.name);
+            // Do something with the object that was hit by the raycast.
         }
     }
 
-    IEnumerator LookForRing()
+    private void OnDrawGizmos()
     {
-        while (ActiveRing == null)
+        if (DEBUG)
         {
-            if (RingPool.Count() > 0)
-            {
-                AcquireRing(RingPool.RemoveObject());
-            }
-            else yield return new WaitForSeconds(0.5f);
+
         }
     }
-
-    void AcquireRing(GameObject PickedUpRing)
-    {
-        ActiveRing = PickedUpRing;
-        _armed = true;
-
-        ActiveRing.GetComponent<Ring>().StartLoaded();
-        ActiveRing.transform.SetParent(ActiveRingPosition.transform);
-        ActiveRing.transform.localPosition = Vector3.zero;
-        ActiveRing.transform.localRotation = Quaternion.identity;
-
-        //UiMngr.SetAmmoText(RingPool.Count().ToString());
-    }*/
 }
