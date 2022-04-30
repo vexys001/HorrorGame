@@ -22,6 +22,8 @@ public class Avatar : MonoBehaviour
 
     [Header("Scene Interaction")]
     //public UIManager UiMngr;
+    public Transform ItemHolder;
+    private GameObject _heldItem;
     [Range(0.1f, 10f)] public float CamRayLength;
     public LayerMask InteractableMask;
 
