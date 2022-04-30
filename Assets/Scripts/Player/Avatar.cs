@@ -69,15 +69,27 @@ public class Avatar : MonoBehaviour
         {
             Transform objectHit = rayHit.transform;
 
-            //Debug.Log("Printing hit name: " + objectHit.name);
-
             UiMngr.ChangeInteractionTXT(objectHit.name);
-            // Do something with the object that was hit by the raycast.
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                PickUpItem(objectHit.gameObject);
+            }
         }
         else
         {
             UiMngr.ChangeInteractionTXT(null);
         }
+    }
+
+    void PickUpItem(GameObject item)
+    {
+        _heldItem = item;
+
+        _heldItem.transform.parent = ItemHolder;
+
+        _heldItem.transform.localPosition = Vector3.zero;
+        _heldItem.transform.localRotation = Quaternion.identity;
     }
 
     private void OnDrawGizmos()

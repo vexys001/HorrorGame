@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press "E" to pick up X
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 19572f2f26f6c604997a38621d80de54, type: 2}
+  m_sharedMaterial: {fileID: -2679651956081256876, guid: 19572f2f26f6c604997a38621d80de54, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2578,6 +2578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Person Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4003255407157778394, guid: c6f2bff341d4a1147856b8798d9ac276, type: 3}
+      propertyPath: UiMngr
+      value: 
+      objectReference: {fileID: 775365496}
     - target: {fileID: 4003255407157778395, guid: c6f2bff341d4a1147856b8798d9ac276, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -2819,6 +2823,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775365496 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8204893099192268314, guid: 8313697c51b45684689860469038a446, type: 3}
+  m_PrefabInstance: {fileID: 6369277021903823333}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b727f70510e0694789bcc3fae461af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &792199187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4696,7 +4711,7 @@ GameObject:
   - component: {fileID: 1448068770}
   - component: {fileID: 1448068769}
   m_Layer: 6
-  m_Name: Interact with me
+  m_Name: OrangeBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4773,9 +4788,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448068768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.36, y: 1.4116845, z: 2.413481}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -3.149, y: 1.4116845, z: 2.413481}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
@@ -7899,6 +7914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8204893099192268314, guid: 8313697c51b45684689860469038a446, type: 3}
+      propertyPath: InteractionText
+      value: 
+      objectReference: {fileID: 45480413}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8313697c51b45684689860469038a446, type: 3}
 --- !u!1001 &6655487325457231621
