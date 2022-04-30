@@ -73,7 +73,7 @@ public class Avatar : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                PickUpItem(objectHit.gameObject);
+                objectHit.GetComponent<Interactable>().Interact(gameObject);
             }
         }
         else
