@@ -21,7 +21,7 @@ public class Avatar : MonoBehaviour
     Vector3 velocity;
 
     [Header("Scene Interaction")]
-    //public UIManager UiMngr;
+    public UIManager UiMngr;
     public Transform ItemHolder;
     private GameObject _heldItem;
     [Range(0.1f, 10f)] public float CamRayLength;
@@ -69,8 +69,14 @@ public class Avatar : MonoBehaviour
         {
             Transform objectHit = rayHit.transform;
 
-            Debug.Log("Printing hit name: " + objectHit.name);
+            //Debug.Log("Printing hit name: " + objectHit.name);
+
+            UiMngr.ChangeInteractionTXT(objectHit.name);
             // Do something with the object that was hit by the raycast.
+        }
+        else
+        {
+            UiMngr.ChangeInteractionTXT(null);
         }
     }
 
