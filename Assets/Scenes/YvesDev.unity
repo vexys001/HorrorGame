@@ -1930,7 +1930,7 @@ PrefabInstance:
       objectReference: {fileID: 787794659}
     - target: {fileID: 8141090976480659698, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
       propertyPath: m_Name
-      value: LightSwitchKitchen
+      value: Kitchen Switch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
@@ -3396,7 +3396,7 @@ PrefabInstance:
       objectReference: {fileID: 182488165}
     - target: {fileID: 8141090976480659698, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
       propertyPath: m_Name
-      value: LightSwitchLR
+      value: Living Room Switch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
@@ -4129,7 +4129,7 @@ PrefabInstance:
       objectReference: {fileID: 1931333068}
     - target: {fileID: 8141090976480659698, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
       propertyPath: m_Name
-      value: LightSwitchBath
+      value: Bathroom Switch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
@@ -5097,7 +5097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b58d30c358d6fa4fac0a608e4a3d47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ContextMessage: 'pick up '
+  ContextMessage: pick up
 --- !u!1 &1475703529
 GameObject:
   m_ObjectHideFlags: 0
@@ -6741,7 +6741,7 @@ PrefabInstance:
       objectReference: {fileID: 179895455}
     - target: {fileID: 8141090976480659698, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
       propertyPath: m_Name
-      value: LightSwitchOffice
+      value: Office Switch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
@@ -7155,7 +7155,7 @@ PrefabInstance:
       objectReference: {fileID: 598257534}
     - target: {fileID: 8141090976480659698, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
       propertyPath: m_Name
-      value: LightSwitchBR
+      value: Bedroom Switch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
@@ -8043,7 +8043,7 @@ PrefabInstance:
       objectReference: {fileID: 1849291305}
     - target: {fileID: 8141090976480659698, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
       propertyPath: m_Name
-      value: LightSwitchHallway
+      value: Hallway Switch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
