@@ -9,12 +9,13 @@ public class TaskManager : MonoBehaviour
 
     private TaskScriptableObject _currentTask;
     private int _currentTaskNum = 0;
+    private int _currentStepNum = 0;
     // Start is called before the first frame update
     void Start()
     {
         _currentTask = TaskList[0];
 
-        UiManager.ChangeTaskTXT(_currentTask.Message);
+        UiManager.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
     }
 
     // Update is called once per frame
@@ -29,6 +30,6 @@ public class TaskManager : MonoBehaviour
 
         _currentTask = TaskList[_currentTaskNum];
 
-        UiManager.ChangeTaskTXT(_currentTask.Message);
+        UiManager.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
     }
 }

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: GameOverData
   m_EditorClassIdentifier: 
   Message: Game Over
+  numOfSteps: 0
   ObjectsToHighlight: []

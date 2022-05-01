@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: TestData
   m_EditorClassIdentifier: 
   Message: Take the Orange Box to the Kitchen
+  numOfSteps: 1
   ObjectsToHighlight: []

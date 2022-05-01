@@ -6,5 +6,6 @@ using UnityEngine;
 public class TaskScriptableObject : ScriptableObject
 {
     public string Message;
-    public GameObject[] ObjectsToHighlight;
+    public int numOfSteps;
+    public string[] ObjectsToHighlight;
 }
