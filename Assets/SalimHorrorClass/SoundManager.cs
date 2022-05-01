@@ -24,7 +24,6 @@ public class SoundManager : MonoBehaviour
 
     void Triggered(int id)
     {
-        Debug.Log($"Trigger ID: {id}");
         if (id == 0)
         {
             PlayAudio01();

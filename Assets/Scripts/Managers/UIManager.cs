@@ -18,15 +18,15 @@ public class UIManager : MonoBehaviour
 
     }
 
-    public void ChangeInteractionTXT(string interactName)
+    public void ChangeInteractionTXT(string interactString)
     {
-        if (interactName == null)
+        if (interactString == null)
         {
             InteractionText.text = "";
         }
         else
         {
-            InteractionText.text = "Press 'E' to pick up " + interactName;
+            InteractionText.text = "Press 'E' to " + interactString;
         }
     }
 }

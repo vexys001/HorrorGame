@@ -69,11 +69,13 @@ public class Avatar : MonoBehaviour
         {
             Transform objectHit = rayHit.transform;
 
-            UiMngr.ChangeInteractionTXT(objectHit.name);
+            Interactable interactee = objectHit.gameObject.GetComponent<Interactable>();
+
+            UiMngr.ChangeInteractionTXT(interactee.ContextMessage + interactee.name);
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                objectHit.GetComponent<Interactable>().Interact(gameObject);
+                interactee.Interact(gameObject);
             }
         }
         else

@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0e2e0f91a203943a03d0e4dfe3551c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ContextMessage: 'use '
   LinkedLight: {fileID: 0}
   OnMaterial: {fileID: 2100000, guid: 378db85937f01e64aab44afd87ab2d8a, type: 2}
   OffMaterial: {fileID: 2100000, guid: bb4bdcf107636a846b08913e285bcc33, type: 2}
