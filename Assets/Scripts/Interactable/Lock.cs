@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lock : Interactable
 {
     public string KeyName;
+    public TaskManager TaskMngr;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +24,11 @@ public class Lock : Interactable
         Avatar player = origin.GetComponent<Avatar>();
         if (player.HeldItem && player.HeldItem.name == KeyName)
         {
-            Debug.Log("Used right item on lock");
+            TaskMngr.CompletedCurrentTask();
+
             player.DropItem();
+
+
             Destroy(gameObject);
         }
     }

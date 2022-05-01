@@ -5,13 +5,16 @@ using UnityEngine;
 public class TaskManager : MonoBehaviour
 {
     public TaskScriptableObject[] TaskList;
+    public UIManager UiManager;
 
-    [SerializeField] private TaskScriptableObject _currentTask;
-    [SerializeField] private int _currentTaskNum = 0;
+    private TaskScriptableObject _currentTask;
+    private int _currentTaskNum = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _currentTask = TaskList[0];
+
+        UiManager.ChangeTaskTXT(_currentTask.Message);
     }
 
     // Update is called once per frame
@@ -20,13 +23,12 @@ public class TaskManager : MonoBehaviour
         
     }
 
-    void SetCurrentTask(TaskScriptableObject nTask)
+    public void CompletedCurrentTask()
     {
-        _currentTask = nTask;
-    }
+        _currentTaskNum++;
 
-    void CompletedCurrentTask()
-    {
+        _currentTask = TaskList[_currentTaskNum];
 
+        UiManager.ChangeTaskTXT(_currentTask.Message);
     }
 }

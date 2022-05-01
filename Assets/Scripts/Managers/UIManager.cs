@@ -6,6 +6,8 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI InteractionText;
+    public TextMeshProUGUI TaskText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,18 @@ public class UIManager : MonoBehaviour
         else
         {
             InteractionText.text = "Press 'E' to " + interactString;
+        }
+    }
+
+    public void ChangeTaskTXT(string taskString)
+    {
+        if (taskString == null)
+        {
+            TaskText.text = "";
+        }
+        else
+        {
+            TaskText.text = taskString;
         }
     }
 }

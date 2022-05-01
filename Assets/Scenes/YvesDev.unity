@@ -3792,6 +3792,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1109943266 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
+  m_PrefabInstance: {fileID: 9039111231859912156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c133591036fb13941879af639916522c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1210780758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5100,6 +5111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ContextMessage: 
   KeyName: OrangeBox
+  TaskMngr: {fileID: 1109943266}
 --- !u!1 &1448068768
 GameObject:
   m_ObjectHideFlags: 0
@@ -5753,7 +5765,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Take Orange box to the kitchen
+  m_text: 'Task Message
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 19572f2f26f6c604997a38621d80de54, type: 2}
   m_sharedMaterial: {fileID: -2679651956081256876, guid: 19572f2f26f6c604997a38621d80de54, type: 2}
@@ -8910,6 +8924,10 @@ PrefabInstance:
       value: UIManager
       objectReference: {fileID: 0}
     - target: {fileID: 8204893099192268314, guid: 8313697c51b45684689860469038a446, type: 3}
+      propertyPath: TaskText
+      value: 
+      objectReference: {fileID: 1521697380}
+    - target: {fileID: 8204893099192268314, guid: 8313697c51b45684689860469038a446, type: 3}
       propertyPath: InteractionText
       value: 
       objectReference: {fileID: 45480413}
@@ -9222,6 +9240,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaskManager
       objectReference: {fileID: 0}
+    - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
+      propertyPath: UiManager
+      value: 
+      objectReference: {fileID: 775365496}
+    - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
+      propertyPath: TaskList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
+      propertyPath: TaskList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 392f1de9e4905a04290d3498c3fba5b9, type: 2}
+    - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
+      propertyPath: TaskList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e81d98c75bce2c4791e0831c6d01ecc, type: 2}
     - target: {fileID: 9039111232552775471, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
       propertyPath: m_RootOrder
       value: 28

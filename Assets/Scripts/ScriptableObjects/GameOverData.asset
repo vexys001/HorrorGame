@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08f95007a26e423428d99469728670a5, type: 3}
-  m_Name: DishesData
+  m_Name: GameOverData
   m_EditorClassIdentifier: 
-  Message: Do the dishes
+  Message: Game Over
   ObjectsToHighlight: []
