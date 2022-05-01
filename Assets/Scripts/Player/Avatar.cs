@@ -23,7 +23,7 @@ public class Avatar : MonoBehaviour
     [Header("Scene Interaction")]
     public UIManager UiMngr;
     public Transform ItemHolder;
-    private GameObject _heldItem;
+    public GameObject HeldItem;
     [Range(0.1f, 10f)] public float CamRayLength;
     public LayerMask InteractableMask;
 
@@ -86,12 +86,17 @@ public class Avatar : MonoBehaviour
 
     void PickUpItem(GameObject item)
     {
-        _heldItem = item;
+        HeldItem = item;
 
-        _heldItem.transform.parent = ItemHolder;
+        HeldItem.transform.parent = ItemHolder;
 
-        _heldItem.transform.localPosition = Vector3.zero;
-        _heldItem.transform.localRotation = Quaternion.identity;
+        HeldItem.transform.localPosition = Vector3.zero;
+        HeldItem.transform.localRotation = Quaternion.identity;
+    }
+
+    public void DropItem()
+    {
+        Destroy(HeldItem);
     }
 
     private void OnDrawGizmos()
