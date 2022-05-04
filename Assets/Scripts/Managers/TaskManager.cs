@@ -6,6 +6,7 @@ public class TaskManager : MonoBehaviour
 {
     public TaskScriptableObject[] TaskList;
     public UIManager UiManager;
+    public InteractableManager InteractbleManager;
 
     private TaskScriptableObject _currentTask;
     private int _currentTaskNum = 0;
@@ -16,6 +17,8 @@ public class TaskManager : MonoBehaviour
         _currentTask = TaskList[0];
 
         UiManager.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
+
+        InteractbleManager.UnlockInteractables(_currentTask.ObjectsToUnlock);
     }
 
     // Update is called once per frame
@@ -31,5 +34,7 @@ public class TaskManager : MonoBehaviour
         _currentTask = TaskList[_currentTaskNum];
 
         UiManager.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
+
+        InteractbleManager.UnlockInteractables(_currentTask.ObjectsToUnlock);
     }
 }

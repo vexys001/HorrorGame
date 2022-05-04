@@ -7,5 +7,5 @@ public class TaskScriptableObject : ScriptableObject
 {
     public string Message;
     public int numOfSteps;
-    public string[] ObjectsToHighlight;
+    public string[] ObjectsToUnlock;
 }

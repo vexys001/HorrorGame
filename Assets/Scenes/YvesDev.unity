@@ -258,6 +258,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45480411}
   m_CullTransparentMesh: 1
+--- !u!1 &47797964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47797965}
+  - component: {fileID: 47797966}
+  m_Layer: 0
+  m_Name: InteractableManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &47797965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47797964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &47797966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47797964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd09ba44d116644582e735c65bdc751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractableHolder: {fileID: 1150196556}
 --- !u!1 &105957780
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +577,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &144923506
 PrefabInstance:
@@ -1452,7 +1497,7 @@ RectTransform:
   - {fileID: 1521697379}
   - {fileID: 1485256824}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2682,7 +2727,7 @@ PrefabInstance:
       objectReference: {fileID: 775365496}
     - target: {fileID: 4003255407157778395, guid: c6f2bff341d4a1147856b8798d9ac276, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 4003255407157778395, guid: c6f2bff341d4a1147856b8798d9ac276, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3811,6 +3856,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c133591036fb13941879af639916522c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1150196556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1150196557}
+  m_Layer: 0
+  m_Name: InteractableHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1150196557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150196556}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1448068772}
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1210780758
 GameObject:
   m_ObjectHideFlags: 0
@@ -3840,7 +3917,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1225521326
 Mesh:
@@ -5103,7 +5180,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1445707789
 MonoBehaviour:
@@ -5118,6 +5195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ContextMessage: 
+  Locked: 0
   KeyName: OrangeBox
   TaskMngr: {fileID: 1109943266}
 --- !u!1 &1448068768
@@ -5210,13 +5288,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448068768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.149, y: 1.4116845, z: 2.413481}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_Father: {fileID: 1150196557}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1448068773
 MonoBehaviour:
@@ -5231,6 +5309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ContextMessage: pick up
+  Locked: 1
 --- !u!1 &1475703529
 GameObject:
   m_ObjectHideFlags: 0
@@ -7335,7 +7414,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1829236854
 GameObject:
@@ -8576,7 +8655,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4960579402180125175, guid: fe27e004ebcd88640bf5a24feda1b8bb, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 4960579402180125175, guid: fe27e004ebcd88640bf5a24feda1b8bb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8942,7 +9021,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1642221566687443441, guid: 8313697c51b45684689860469038a446, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 1642221566687443441, guid: 8313697c51b45684689860469038a446, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9252,6 +9331,10 @@ PrefabInstance:
       propertyPath: UiManager
       value: 
       objectReference: {fileID: 775365496}
+    - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
+      propertyPath: InteractbleManager
+      value: 
+      objectReference: {fileID: 47797966}
     - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
       propertyPath: TaskList.Array.size
       value: 2

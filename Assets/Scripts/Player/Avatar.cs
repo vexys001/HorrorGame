@@ -71,12 +71,23 @@ public class Avatar : MonoBehaviour
 
             Interactable interactee = objectHit.gameObject.GetComponent<Interactable>();
 
-            UiMngr.ChangeInteractionTXT(interactee.ContextMessage + " " + interactee.name);
+            if (!interactee.Locked)
+            {
+                UiMngr.ChangeInteractionTXT(interactee.ContextMessage + " " + interactee.name);
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    interactee.Interact(gameObject);
+                }
+            }
+
+            /*UiMngr.ChangeInteractionTXT(interactee.ContextMessage + " " + interactee.name);
 
             if (Input.GetKeyDown(KeyCode.E))
             {
                 interactee.Interact(gameObject);
-            }
+            }*/
+
         }
         else
         {
