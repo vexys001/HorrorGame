@@ -16,3 +16,4 @@ MonoBehaviour:
   numOfSteps: 1
   ObjectsToUnlock:
   - OrangeBox
+  - BlueBoxLock

@@ -80,14 +80,6 @@ public class Avatar : MonoBehaviour
                     interactee.Interact(gameObject);
                 }
             }
-
-            /*UiMngr.ChangeInteractionTXT(interactee.ContextMessage + " " + interactee.name);
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                interactee.Interact(gameObject);
-            }*/
-
         }
         else
         {
