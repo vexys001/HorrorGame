@@ -6,7 +6,7 @@ public class InteractableManager : MonoBehaviour
 {
     public Transform InteractableHolder;
 
-    public Dictionary<string, GameObject> InteractableDicto;
+    private Dictionary<string, GameObject> InteractableDicto;
 
     private void Awake()
     {
@@ -35,8 +35,8 @@ public class InteractableManager : MonoBehaviour
         GameObject target;
         foreach (string name in nameList)
         {
-            Debug.Log($"Unlocking {name}");
             InteractableDicto.TryGetValue(name, out target);
+
             target.GetComponent<Interactable>().Unlock();
         }
     }
