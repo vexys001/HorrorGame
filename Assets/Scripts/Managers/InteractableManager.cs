@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class InteractableManager : MonoBehaviour
 {
-    public GameObject InteractableHolder;
+    public Transform InteractableHolder;
+
+    public Dictionary<string, GameObject> InteractableDicto;
+
+    private void Awake()
+    {
+        InteractableDicto = new Dictionary<string, GameObject>();
+
+        for (int i = 0; i < InteractableHolder.childCount; i++)
+        {
+            InteractableDicto.Add(InteractableHolder.GetChild(i).name, InteractableHolder.GetChild(i).gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +32,11 @@ public class InteractableManager : MonoBehaviour
 
     public void UnlockInteractables(string[] nameList)
     {
-        Transform target;
+        GameObject target;
         foreach (string name in nameList)
         {
             Debug.Log($"Unlocking {name}");
-            target = InteractableHolder.transform.Find(name);
+            InteractableDicto.TryGetValue(name, out target);
             target.GetComponent<Interactable>().Unlock();
         }
     }
