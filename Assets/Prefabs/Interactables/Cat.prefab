@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6769657403961240457}
   - component: {fileID: 7664418617336587308}
   - component: {fileID: 5600660813131813094}
+  - component: {fileID: 7703958303359070436}
+  - component: {fileID: 5458602507376848645}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6249156963926782259}
-  m_LocalRotation: {x: -0.29400283, y: 0.64308816, z: 0.64308816, w: 0.29400274}
+  m_LocalRotation: {x: -0.29400146, y: 0.64308876, z: 0.64308876, w: 0.29400146}
   m_LocalPosition: {x: 7.108, y: 0.255, z: -5.302}
   m_LocalScale: {x: 6.984195, y: 6.9841948, z: 6.984195}
   m_ConstrainProportionsScale: 0
@@ -83,3 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7703958303359070436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249156963926782259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7e2a66b04452c48a1c6c04ea7bca13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContextMessage: 
+  Locked: 1
+  KeyName: CATFOODCAN
+  TaskMngr: {fileID: 0}
+--- !u!65 &5458602507376848645
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249156963926782259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04540167, y: 0.046091452, z: 0.068404116}
+  m_Center: {x: 0.019264841, y: 0.0052863145, z: 0.02352231}

@@ -3070,7 +3070,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f10d089d0030ba45a3f1b185ff9bd94, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5217,7 +5217,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0b3d3867455356141b96b140ded551d6, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b3d3867455356141b96b140ded551d6, type: 3}
       propertyPath: m_LocalScale.x
@@ -5367,13 +5367,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2036309120}
-  - {fileID: 7703958303359070433}
+  - {fileID: 1094614996}
   - {fileID: 6150828322829716769}
+  - {fileID: 7703958303359070433}
   - {fileID: 1448068772}
   - {fileID: 1445707788}
   - {fileID: 1893897485}
   - {fileID: 1293292390}
-  - {fileID: 1094614996}
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5805,7 +5805,7 @@ PrefabInstance:
       objectReference: {fileID: 1109943266}
     - target: {fileID: 8871811466701844133, guid: ab91d7ee76dab704bb77818afff0997f, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8871811466701844133, guid: ab91d7ee76dab704bb77818afff0997f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9649,7 +9649,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5542549958305683600, guid: 37b7d43733e214b4bba5fc2565b9aa54, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5542549958305683600, guid: 37b7d43733e214b4bba5fc2565b9aa54, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11051,9 +11051,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 6249156963926782259, guid: dbf24247e4d4d474d877634c1ba81270, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6769657403961240457, guid: dbf24247e4d4d474d877634c1ba81270, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6769657403961240457, guid: dbf24247e4d4d474d877634c1ba81270, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11095,6 +11099,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 130.863
       objectReference: {fileID: 0}
+    - target: {fileID: 7703958303359070436, guid: dbf24247e4d4d474d877634c1ba81270, type: 3}
+      propertyPath: TaskMngr
+      value: 
+      objectReference: {fileID: 1109943266}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbf24247e4d4d474d877634c1ba81270, type: 3}
 --- !u!1001 &5107325528730075529
@@ -11191,7 +11199,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5542549958305683600, guid: 37b7d43733e214b4bba5fc2565b9aa54, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5542549958305683600, guid: 37b7d43733e214b4bba5fc2565b9aa54, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11564,21 +11572,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150196557}
     m_Modifications:
+    - target: {fileID: 1580743354443535581, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282340717585194943, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2367907488451067190, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2367907488451067190, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -0.066377245
-      objectReference: {fileID: 0}
-    - target: {fileID: 2367907488451067190, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
-      propertyPath: m_LocalScale.y
-      value: -0.066377245
-      objectReference: {fileID: 0}
-    - target: {fileID: 2367907488451067190, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
-      propertyPath: m_LocalScale.z
-      value: -0.066377245
       objectReference: {fileID: 0}
     - target: {fileID: 2367907488451067190, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11623,6 +11627,14 @@ PrefabInstance:
     - target: {fileID: 3141172762998777740, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
       propertyPath: m_Name
       value: CATFOODCAN
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141172762998777740, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490456342880857324, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
+      propertyPath: ContextMessage
+      value: pick up
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8e8f4d667c1edd44aefc46d9ebd2ecd, type: 3}
@@ -11724,7 +11736,7 @@ PrefabInstance:
       objectReference: {fileID: 1109943266}
     - target: {fileID: 8871811466701844133, guid: ab91d7ee76dab704bb77818afff0997f, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8871811466701844133, guid: ab91d7ee76dab704bb77818afff0997f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11793,16 +11805,16 @@ PrefabInstance:
       objectReference: {fileID: 47797966}
     - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
       propertyPath: TaskList.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
       propertyPath: TaskList.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 392f1de9e4905a04290d3498c3fba5b9, type: 2}
+      objectReference: {fileID: 11400000, guid: 301e31e91025f3a49a3d6c8eee5ffb67, type: 2}
     - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
       propertyPath: TaskList.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 88721919f9d48014089c6c30e7d886e0, type: 2}
+      objectReference: {fileID: 11400000, guid: 4e81d98c75bce2c4791e0831c6d01ecc, type: 2}
     - target: {fileID: 9039111232552775470, guid: ab7446dd53b14e74bb10a50be75c8744, type: 3}
       propertyPath: TaskList.Array.data[2]
       value: 
