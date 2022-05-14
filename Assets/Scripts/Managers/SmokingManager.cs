@@ -46,10 +46,15 @@ public class SmokingManager : MonoBehaviour
         Debug.Log("You need to smoke!!!");
         _player.GetComponent<Avatar>().enabled = false;
         _player.GetComponent<AvatarSmoking>().enabled = true;
+
+        UIManager.Instance.ChangeTaskTXT("Smoke a cigarette");
+        UIManager.Instance.ChangeInteractionTXT("Press 'Q' to smoke");
     }
 
     public void StartSmoking()
     {
         _meter.SetActive(true);
+
+        UIManager.Instance.ChangeInteractionTXT(null);
     }
 }

@@ -7,12 +7,11 @@ public class AvatarSmoking : MonoBehaviour
     public GameObject CigaretteGO;
     public Transform ItemHolder;
     private bool _isSmoking;
+
     // Start is called before the first frame update
     void Start()
     {
         _isSmoking = false;
-        Debug.Log("Smoking Manager Start");
-
     }
 
     // Update is called once per frame
@@ -29,7 +28,6 @@ public class AvatarSmoking : MonoBehaviour
 
             CigaretteGO.transform.localPosition = Vector3.zero;
             CigaretteGO.transform.localRotation = Quaternion.Euler(0,0, 180);
-            //CigaretteGO.transform.localRotation = Quaternion.identity;
         }
     }
 }

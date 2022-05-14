@@ -43,7 +43,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            InteractionText.text = "Press 'E' to " + interactString;
+            InteractionText.text = interactString;
         }
     }
 
