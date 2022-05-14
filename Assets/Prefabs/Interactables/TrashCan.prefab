@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6249156963926782259
+--- !u!1 &6282410858165473791
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6769657403961240457}
-  - component: {fileID: 7664418617336587308}
-  - component: {fileID: 5600660813131813094}
-  - component: {fileID: 5458602507376848645}
-  - component: {fileID: 7703958303359070436}
+  - component: {fileID: 6657529503011752773}
+  - component: {fileID: 7767460698866435296}
+  - component: {fileID: 5489719806262063146}
+  - component: {fileID: 5634088562316937701}
+  - component: {fileID: 3834734727787267016}
   m_Layer: 6
-  m_Name: Cat
+  m_Name: TrashCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6769657403961240457
+--- !u!4 &6657529503011752773
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
-  m_LocalRotation: {x: -0.29400146, y: 0.64308876, z: 0.64308876, w: 0.29400146}
-  m_LocalPosition: {x: 7.108, y: 0.255, z: -5.302}
-  m_LocalScale: {x: 6.984195, y: 6.9841948, z: 6.984195}
+  m_GameObject: {fileID: 6282410858165473791}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 3.3808715, y: 0.2500237, z: 1.5135382}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 130.863}
---- !u!33 &7664418617336587308
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7767460698866435296
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
-  m_Mesh: {fileID: -4291460296764276334, guid: 3122a186d07dc114a960107eb742fc36, type: 3}
---- !u!23 &5600660813131813094
+  m_GameObject: {fileID: 6282410858165473791}
+  m_Mesh: {fileID: -6267059943751326332, guid: 0b3d3867455356141b96b140ded551d6, type: 3}
+--- !u!23 &5489719806262063146
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
+  m_GameObject: {fileID: 6282410858165473791}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 3122a186d07dc114a960107eb742fc36, type: 3}
+  - {fileID: 2100000, guid: d003c06ddf0774c4bad537bebee0d955, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,33 +85,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5458602507376848645
+--- !u!65 &5634088562316937701
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
+  m_GameObject: {fileID: 6282410858165473791}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.04540167, y: 0.046091452, z: 0.068404116}
-  m_Center: {x: 0.019264841, y: 0.0052863145, z: 0.02352231}
---- !u!114 &7703958303359070436
+  m_Size: {x: 0.004011373, y: 0.004011373, z: 0.003987964}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3834734727787267016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
+  m_GameObject: {fileID: 6282410858165473791}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e7e2a66b04452c48a1c6c04ea7bca13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ContextMessage: 
+  ContextMessage: Throw in
   Locked: 1
-  KeyNames:
-  - Cat food can
+  KeyNames: []
   TaskMngr: {fileID: 0}

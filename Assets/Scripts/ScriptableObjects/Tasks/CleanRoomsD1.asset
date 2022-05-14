@@ -15,6 +15,6 @@ MonoBehaviour:
   Message: Throw away soda cans
   numOfSteps: 1
   ObjectsToUnlock:
-  - SODACAN1
-  - TRASHCAN
+  - SodaCanT1
+  - Trash can
   ScaresToUnlock: []

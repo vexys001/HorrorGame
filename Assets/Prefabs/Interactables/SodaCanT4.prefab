@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6249156963926782259
+--- !u!1 &9006327749601171275
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6769657403961240457}
-  - component: {fileID: 7664418617336587308}
-  - component: {fileID: 5600660813131813094}
-  - component: {fileID: 5458602507376848645}
-  - component: {fileID: 7703958303359070436}
+  - component: {fileID: 8626425125904371185}
+  - component: {fileID: 4618701345951040084}
+  - component: {fileID: 7492893767961622174}
+  - component: {fileID: 2452988190780063742}
   m_Layer: 6
-  m_Name: Cat
+  m_Name: SodaCanT4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6769657403961240457
+--- !u!4 &8626425125904371185
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
-  m_LocalRotation: {x: -0.29400146, y: 0.64308876, z: 0.64308876, w: 0.29400146}
-  m_LocalPosition: {x: 7.108, y: 0.255, z: -5.302}
-  m_LocalScale: {x: 6.984195, y: 6.9841948, z: 6.984195}
+  m_GameObject: {fileID: 9006327749601171275}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 3.0644996, y: 0.113268115, z: 0.6876853}
+  m_LocalScale: {x: 6.28751, y: 6.28751, z: 6.28751}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 130.863}
---- !u!33 &7664418617336587308
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4618701345951040084
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
-  m_Mesh: {fileID: -4291460296764276334, guid: 3122a186d07dc114a960107eb742fc36, type: 3}
---- !u!23 &5600660813131813094
+  m_GameObject: {fileID: 9006327749601171275}
+  m_Mesh: {fileID: -9180664724397288925, guid: 906bf7b56a6ec32458d6ce75cfd1aea2, type: 3}
+--- !u!23 &7492893767961622174
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
+  m_GameObject: {fileID: 9006327749601171275}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 3122a186d07dc114a960107eb742fc36, type: 3}
+  - {fileID: 2100000, guid: 378db85937f01e64aab44afd87ab2d8a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,33 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5458602507376848645
+--- !u!65 &2452988190780063742
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
+  m_GameObject: {fileID: 9006327749601171275}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.04540167, y: 0.046091452, z: 0.068404116}
-  m_Center: {x: 0.019264841, y: 0.0052863145, z: 0.02352231}
---- !u!114 &7703958303359070436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249156963926782259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7e2a66b04452c48a1c6c04ea7bca13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ContextMessage: 
-  Locked: 1
-  KeyNames:
-  - Cat food can
-  TaskMngr: {fileID: 0}
+  m_Size: {x: 0.019889506, y: 0.019442018, z: 0.020448372}
+  m_Center: {x: -0.000004327856, y: 0.00016706946, z: 0.00016168735}
