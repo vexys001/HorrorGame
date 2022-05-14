@@ -3755,6 +3755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OVEN
       objectReference: {fileID: 0}
+    - target: {fileID: 7090514740079889375, guid: 543cc5808c482be4f922fe29be0fc8d7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 543cc5808c482be4f922fe29be0fc8d7, type: 3}
 --- !u!4 &6663350762188784903 stripped

@@ -93,7 +93,7 @@ public class Avatar : MonoBehaviour
         }
     }
 
-    void PickUpItem(GameObject item)
+    public void PickUpItem(GameObject item)
     {
         if (!HeldItem)
         {
@@ -105,6 +105,11 @@ public class Avatar : MonoBehaviour
             HeldItem.transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
 
+    }
+
+    public GameObject GiveItem()
+    {
+        return HeldItem;
     }
 
     public void DropItem()
