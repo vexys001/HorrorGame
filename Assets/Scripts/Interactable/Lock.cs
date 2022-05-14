@@ -27,9 +27,7 @@ public class Lock : Interactable
             TaskMngr.CompletedCurrentTask();
 
             player.DropItem();
-
-
-            Destroy(gameObject);
+            Locked = true;
         }
     }
 }
