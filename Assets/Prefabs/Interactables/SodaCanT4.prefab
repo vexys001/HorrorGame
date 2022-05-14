@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4618701345951040084}
   - component: {fileID: 7492893767961622174}
   - component: {fileID: 2452988190780063742}
+  - component: {fileID: 3319635547838790765}
   m_Layer: 6
   m_Name: SodaCanT4
   m_TagString: Untagged
@@ -97,3 +98,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019889506, y: 0.019442018, z: 0.020448372}
   m_Center: {x: -0.000004327856, y: 0.00016706946, z: 0.00016168735}
+--- !u!114 &3319635547838790765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9006327749601171275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b58d30c358d6fa4fac0a608e4a3d47f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContextMessage: Pick up
+  Locked: 1
