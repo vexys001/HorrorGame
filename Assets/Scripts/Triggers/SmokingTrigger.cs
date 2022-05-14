@@ -9,6 +9,7 @@ public class SmokingTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SmokingManager.Instance.StartNeedSmoke();
+            gameObject.SetActive(false);
         }
     }
 }

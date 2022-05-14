@@ -5,7 +5,8 @@ using UnityEngine;
 public class SmokingManager : MonoBehaviour
 {
     static SmokingManager instance;
-    private Avatar _player;
+    private GameObject _player;
+    private GameObject _meter;
 
     public static SmokingManager Instance
     {
@@ -30,14 +31,25 @@ public class SmokingManager : MonoBehaviour
         }
     }
 
-    public void SetPlayer(Avatar player)
+    public void SetPlayer(GameObject player)
     {
         _player = player;
+    }
+
+    public void SetMeter(GameObject meter)
+    {
+        _meter = meter;
     }
 
     public void StartNeedSmoke()
     {
         Debug.Log("You need to smoke!!!");
-        _player.enabled = false;
+        _player.GetComponent<Avatar>().enabled = false;
+        _player.GetComponent<AvatarSmoking>().enabled = true;
+    }
+
+    public void StartSmoking()
+    {
+        _meter.SetActive(true);
     }
 }

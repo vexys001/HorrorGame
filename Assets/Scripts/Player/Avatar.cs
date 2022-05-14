@@ -34,7 +34,7 @@ public class Avatar : MonoBehaviour
 
     private void Awake()
     {
-        SmokingManager.Instance.SetPlayer(this);
+        SmokingManager.Instance.SetPlayer(gameObject);
     }
 
     // Start is called before the first frame update
