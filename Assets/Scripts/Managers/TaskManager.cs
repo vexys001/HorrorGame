@@ -11,6 +11,12 @@ public class TaskManager : MonoBehaviour
     private int _currentTaskNum = 0;
     private int _currentStepNum = 0;
 
+    private void Start()
+    {
+        UIManager.Instance.ChangeTaskTXT(null);
+        SmokingManager.Instance.SetTaskManager(gameObject);
+    }
+
     public void StartTasks()
     {
         _currentTask = TaskList[0];

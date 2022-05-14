@@ -44,6 +44,12 @@ public class SmokingManager : MonoBehaviour
         _meter = meter;
     }
 
+    public void SetTaskManager(GameObject manager)
+    {
+        _taskMngr = manager;
+    }
+
+
     public void StartNeedSmoke()
     {
         _player.GetComponent<Avatar>().enabled = false;

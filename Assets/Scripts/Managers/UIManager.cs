@@ -31,15 +31,15 @@ public class UIManager : MonoBehaviour
         {
             instance = this;
         }
-        InteractionText = GameObject.Find("InteractionText").GetComponent<TextMeshProUGUI>();
-        TaskText = GameObject.Find("TaskText").GetComponent<TextMeshProUGUI>();
-
-        InteractionText.text = "";
-        TaskText.text = "";
     }
 
     public void ChangeInteractionTXT(string interactString)
     {
+        if (!InteractionText)
+        {
+            InteractionText = GameObject.Find("InteractionText").GetComponent<TextMeshProUGUI>();
+        }
+
         if (interactString == null)
         {
             InteractionText.text = "";
@@ -52,6 +52,11 @@ public class UIManager : MonoBehaviour
 
     public void ChangeTaskTXT(string taskString)
     {
+        if (!TaskText)
+        {
+            TaskText = GameObject.Find("TaskText").GetComponent<TextMeshProUGUI>();
+        }
+
         if (taskString == null)
         {
             TaskText.text = "";

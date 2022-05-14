@@ -990,7 +990,7 @@ GameObject:
   - component: {fileID: 264866106}
   - component: {fileID: 264866109}
   m_Layer: 6
-  m_Name: BedInteractable
+  m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1086,9 +1086,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f190e2adc745b4c935275995addf6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ContextMessage: Sleep
+  ContextMessage: Sleep in
   Locked: 1
-  NextSceneName: YvesBackUp01
+  NextSceneName: YvesDev02BackUP
 --- !u!1 &340224659
 GameObject:
   m_ObjectHideFlags: 0
