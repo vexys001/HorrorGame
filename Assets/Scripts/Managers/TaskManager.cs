@@ -28,6 +28,10 @@ public class TaskManager : MonoBehaviour
 
     public void CompletedCurrentTask()
     {
+        //Lock Previous Items
+        InteractbleManager.LockInteractables(_currentTask.ObjectsToUnlock);
+
+        //Unlock future items
         _currentTaskNum++;
 
         _currentTask = TaskList[_currentTaskNum];

@@ -18,18 +18,6 @@ public class InteractableManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void UnlockInteractables(string[] nameList)
     {
         GameObject target;
@@ -38,6 +26,17 @@ public class InteractableManager : MonoBehaviour
             InteractableDicto.TryGetValue(name, out target);
 
             target.GetComponent<Interactable>().Unlock();
+        }
+    }
+
+    public void LockInteractables(string[] nameList)
+    {
+        GameObject target;
+        foreach (string name in nameList)
+        {
+            InteractableDicto.TryGetValue(name, out target);
+
+            target.GetComponent<Interactable>().Lock();
         }
     }
 }

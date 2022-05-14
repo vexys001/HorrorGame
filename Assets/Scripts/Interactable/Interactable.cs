@@ -13,4 +13,9 @@ public abstract class Interactable : MonoBehaviour
     {
         Locked = false;
     }
+
+    public void Lock()
+    {
+        Locked = true;
+    }
 }

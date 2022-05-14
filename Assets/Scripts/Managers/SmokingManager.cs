@@ -7,6 +7,7 @@ public class SmokingManager : MonoBehaviour
     static SmokingManager instance;
     private GameObject _player;
     private GameObject _meter;
+    private GameObject _taskMngr;
 
     public static SmokingManager Instance
     {
@@ -29,6 +30,8 @@ public class SmokingManager : MonoBehaviour
         {
             instance = this;
         }
+
+        _taskMngr = GameObject.Find("TaskManager");
     }
 
     public void SetPlayer(GameObject player)
@@ -43,7 +46,6 @@ public class SmokingManager : MonoBehaviour
 
     public void StartNeedSmoke()
     {
-        Debug.Log("You need to smoke!!!");
         _player.GetComponent<Avatar>().enabled = false;
         _player.GetComponent<AvatarSmoking>().enabled = true;
 
@@ -56,5 +58,15 @@ public class SmokingManager : MonoBehaviour
         _meter.SetActive(true);
 
         UIManager.Instance.ChangeInteractionTXT(null);
+    }
+
+    public void StopSmoking()
+    {
+        _meter.SetActive(false);
+
+        _taskMngr.GetComponent<TaskManager>().CompletedCurrentTask();
+
+        _player.GetComponent<Avatar>().enabled = true;
+        _player.GetComponent<AvatarSmoking>().enabled = false;
     }
 }
