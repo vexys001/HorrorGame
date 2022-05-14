@@ -8,7 +8,6 @@ public class Avatar : MonoBehaviour
     private CharacterController _cc;
     public Camera MainCamera;
 
-
     [Header("Ground vars")]
     public Transform GroundCheck;
     public float GroundDistance = 0.4f;
@@ -33,6 +32,11 @@ public class Avatar : MonoBehaviour
     [Header("Debugging")]
     public bool DEBUG = false;
 
+    private void Awake()
+    {
+        SmokingManager.Instance.SetPlayer(this);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +47,7 @@ public class Avatar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Gravity
         _isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
 
         if (_isGrounded && velocity.y < 0)
@@ -62,6 +67,8 @@ public class Avatar : MonoBehaviour
 
         _cc.Move(velocity * Time.deltaTime);
 
+
+        //Camera Raycast
         RaycastHit rayHit;
         Ray cameraRay = MainCamera.ScreenPointToRay(Input.mousePosition);
 
