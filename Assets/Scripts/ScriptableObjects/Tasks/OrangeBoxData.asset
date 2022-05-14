@@ -17,3 +17,6 @@ MonoBehaviour:
   ObjectsToUnlock:
   - OrangeBox
   - BlueBoxLock
+  ScaresToUnlock:
+  - MonsterTextured
+  - LivingRoomMonster

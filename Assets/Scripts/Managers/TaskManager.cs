@@ -6,6 +6,7 @@ public class TaskManager : MonoBehaviour
 {
     public TaskScriptableObject[] TaskList;
     public InteractableManager InteractbleManager;
+    public ScareManager ScareMngr;
 
     private TaskScriptableObject _currentTask;
     private int _currentTaskNum = 0;
@@ -24,6 +25,8 @@ public class TaskManager : MonoBehaviour
         UIManager.Instance.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
 
         InteractbleManager.UnlockInteractables(_currentTask.ObjectsToUnlock);
+
+        ScareMngr.UnlockScare(_currentTask.ScaresToUnlock);
     }
 
     public void CompletedCurrentTask()
@@ -39,5 +42,7 @@ public class TaskManager : MonoBehaviour
         UIManager.Instance.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
 
         InteractbleManager.UnlockInteractables(_currentTask.ObjectsToUnlock);
+
+        ScareMngr.UnlockScare(_currentTask.ScaresToUnlock);
     }
 }
