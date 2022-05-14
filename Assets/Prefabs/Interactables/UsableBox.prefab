@@ -110,5 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b58d30c358d6fa4fac0a608e4a3d47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ContextMessage: pick up
+  ContextMessage: Pick up
   Locked: 1
