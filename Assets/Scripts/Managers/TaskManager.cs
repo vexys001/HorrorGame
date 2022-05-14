@@ -29,6 +29,18 @@ public class TaskManager : MonoBehaviour
         ScareMngr.UnlockScare(_currentTask.ScaresToUnlock);
     }
 
+    public void CompletedSubTask()
+    {
+        _currentStepNum++;
+        UIManager.Instance.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
+
+        if(_currentStepNum == _currentTask.numOfSteps)
+        {
+            _currentStepNum = 0;
+            CompletedCurrentTask();
+        }
+    }
+
     public void CompletedCurrentTask()
     {
         //Lock Previous Items

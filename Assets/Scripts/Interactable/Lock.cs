@@ -24,7 +24,7 @@ public class Lock : Interactable
         Avatar player = origin.GetComponent<Avatar>();
         if (player.HeldItem && player.HeldItem.name == KeyName)
         {
-            TaskMngr.CompletedCurrentTask();
+            TaskMngr.CompletedSubTask();
 
             player.DropItem();
             Locked = true;

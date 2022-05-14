@@ -100,7 +100,7 @@ public class Avatar : MonoBehaviour
         HeldItem.transform.parent = ItemHolder;
 
         HeldItem.transform.localPosition = Vector3.zero;
-        HeldItem.transform.localRotation = Quaternion.identity;
+        HeldItem.transform.localRotation = Quaternion.Euler(0,180,0);
     }
 
     public void DropItem()

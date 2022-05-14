@@ -7,6 +7,7 @@ public class AudioTrigger : MonoBehaviour
     private AudioSource _audioSource;
 
     public bool TriggerOnce;
+    private bool triggered = false;
     public string TriggerTarget;
     public AudioClip _clipToPlay;
     // Start is called before the first frame update
@@ -18,14 +19,22 @@ public class AudioTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.name.Equals(TriggerTarget))
         {
-            _audioSource.PlayOneShot(_clipToPlay);
+            if (TriggerOnce && !triggered)
+            {
+                triggered = true;
+                _audioSource.PlayOneShot(_clipToPlay);
+            }
+            else if(!TriggerOnce)
+            {
+                _audioSource.PlayOneShot(_clipToPlay);
+            }
         }
     }
 }
