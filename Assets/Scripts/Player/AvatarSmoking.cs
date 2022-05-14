@@ -6,15 +6,23 @@ public class AvatarSmoking : MonoBehaviour
 {
     public GameObject CigaretteGO;
     public Transform ItemHolder;
+    public MonoBehaviour[] CameraEffects;
+
     private bool _isSmoking;
 
     private float timer;
     private float SmokingDuration = 15;
 
+    private bool _VFXActive;
+    private float VFXStart;
+    private float VFXtimer;
+    private float VFXDuration;
+
     // Start is called before the first frame update
     void Start()
     {
         _isSmoking = false;
+        _VFXActive = false;
     }
 
     // Update is called once per frame
@@ -31,6 +39,9 @@ public class AvatarSmoking : MonoBehaviour
 
             CigaretteGO.transform.localPosition = Vector3.zero;
             CigaretteGO.transform.localRotation = Quaternion.Euler(0,0, 180);
+
+            VFXStart = Random.Range(0,10f);
+            VFXDuration = Random.Range(1,4f);
         }
 
         if (_isSmoking)
@@ -47,6 +58,35 @@ public class AvatarSmoking : MonoBehaviour
                 CigaretteGO.transform.position = new Vector3(100,100,100);
 
                 SmokingManager.Instance.StopSmoking();
+            }
+
+
+            VFXtimer += Time.deltaTime;
+
+            if(VFXtimer >= VFXStart && !_VFXActive)
+            {
+                _VFXActive = true;
+                float random;
+                float probability = 0.75f;
+
+                foreach (MonoBehaviour effect in CameraEffects)
+                {
+                    random = Random.Range(0, 1f);
+                    Debug.Log($"{random} so ");
+                    if (random <= probability)
+                    {
+                        Debug.Log($"{effect.name} activated");
+                        probability *= 0.5f;
+                        effect.enabled = true;
+                    }
+                }
+            }
+            else if (VFXtimer >= VFXStart+VFXDuration && _VFXActive)
+            {
+                foreach (MonoBehaviour effect in CameraEffects)
+                {
+                    effect.enabled = false;
+                }
             }
         }
     }
