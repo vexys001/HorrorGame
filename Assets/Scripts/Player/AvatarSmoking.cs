@@ -11,6 +11,8 @@ public class AvatarSmoking : MonoBehaviour
     void Start()
     {
         _isSmoking = false;
+        Debug.Log("Smoking Manager Start");
+
     }
 
     // Update is called once per frame

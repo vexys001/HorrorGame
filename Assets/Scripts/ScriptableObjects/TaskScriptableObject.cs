@@ -8,4 +8,5 @@ public class TaskScriptableObject : ScriptableObject
     public string Message;
     public int numOfSteps;
     public string[] ObjectsToUnlock;
+    public string[] ScaresToUnlock;
 }

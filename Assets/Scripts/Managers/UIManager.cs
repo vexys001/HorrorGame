@@ -5,19 +5,34 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    static UIManager instance;
+
     public TextMeshProUGUI InteractionText;
     public TextMeshProUGUI TaskText;
 
-    // Start is called before the first frame update
-    void Start()
+    public static UIManager Instance
     {
-
+        get
+        {
+            if (instance == null)
+            {
+                GameObject go = new GameObject();
+                instance = go.AddComponent<UIManager>();
+                go.name = "(Singleton) UIManager";
+                DontDestroyOnLoad(go);
+            }
+            return instance;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-
+        if (instance == null)
+        {
+            instance = this;
+        }
+        InteractionText = GameObject.Find("InteractionText").GetComponent<TextMeshProUGUI>();
+        TaskText = GameObject.Find("TaskText").GetComponent<TextMeshProUGUI>();
     }
 
     public void ChangeInteractionTXT(string interactString)

@@ -20,7 +20,6 @@ public class Avatar : MonoBehaviour
     Vector3 velocity;
 
     [Header("Scene Interaction")]
-    public UIManager UiMngr;
     public Transform ItemHolder;
     public GameObject HeldItem;
     [Range(0.1f, 10f)] public float CamRayLength;
@@ -80,7 +79,7 @@ public class Avatar : MonoBehaviour
 
             if (!interactee.Locked)
             {
-                UiMngr.ChangeInteractionTXT(interactee.ContextMessage + " " + interactee.name);
+                UIManager.Instance.ChangeInteractionTXT(interactee.ContextMessage + " " + interactee.name);
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -90,7 +89,7 @@ public class Avatar : MonoBehaviour
         }
         else
         {
-            UiMngr.ChangeInteractionTXT(null);
+            UIManager.Instance.ChangeInteractionTXT(null);
         }
     }
 

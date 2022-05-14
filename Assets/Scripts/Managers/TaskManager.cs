@@ -5,7 +5,6 @@ using UnityEngine;
 public class TaskManager : MonoBehaviour
 {
     public TaskScriptableObject[] TaskList;
-    public UIManager UiManager;
     public InteractableManager InteractbleManager;
 
     private TaskScriptableObject _currentTask;
@@ -16,7 +15,7 @@ public class TaskManager : MonoBehaviour
     {
         _currentTask = TaskList[0];
 
-        UiManager.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
+        UIManager.Instance.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
 
         InteractbleManager.UnlockInteractables(_currentTask.ObjectsToUnlock);
     }
@@ -33,7 +32,7 @@ public class TaskManager : MonoBehaviour
 
         _currentTask = TaskList[_currentTaskNum];
 
-        UiManager.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
+        UIManager.Instance.ChangeTaskTXT($"{_currentTask.Message} ({_currentStepNum} / {_currentTask.numOfSteps})");
 
         InteractbleManager.UnlockInteractables(_currentTask.ObjectsToUnlock);
     }
