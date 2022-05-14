@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: CleanRoomsD1
   m_EditorClassIdentifier: 
   Message: Throw away soda cans
-  numOfSteps: 1
+  numOfSteps: 2
   ObjectsToUnlock:
   - SodaCanT1
+  - SodaCanT2
   - Trash can
   ScaresToUnlock: []

@@ -28,7 +28,6 @@ public class Lock : Interactable
             TaskMngr.CompletedSubTask();
 
             player.DropItem();
-            Locked = true;
         }
     }
 }
