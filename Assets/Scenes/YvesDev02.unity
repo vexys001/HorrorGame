@@ -1551,6 +1551,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882c719cea3dc49409af5d8f833f5b9b, type: 3}
+--- !u!1 &568608511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5858440406693796854, guid: fe27e004ebcd88640bf5a24feda1b8bb, type: 3}
+  m_PrefabInstance: {fileID: 748127415114358040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &598257533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1864,6 +1869,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3569660293060048905, guid: c6f2bff341d4a1147856b8798d9ac276, type: 3}
+      propertyPath: CigaretteGO
+      value: 
+      objectReference: {fileID: 568608511}
     - target: {fileID: 4003255407157778393, guid: c6f2bff341d4a1147856b8798d9ac276, type: 3}
       propertyPath: m_Name
       value: First Person Player
@@ -5468,7 +5477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4960579402180125175, guid: fe27e004ebcd88640bf5a24feda1b8bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.861
+      value: 6.49
       objectReference: {fileID: 0}
     - target: {fileID: 4960579402180125175, guid: fe27e004ebcd88640bf5a24feda1b8bb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5476,7 +5485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4960579402180125175, guid: fe27e004ebcd88640bf5a24feda1b8bb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.411
+      value: 2.54
       objectReference: {fileID: 0}
     - target: {fileID: 4960579402180125175, guid: fe27e004ebcd88640bf5a24feda1b8bb, type: 3}
       propertyPath: m_LocalRotation.w
