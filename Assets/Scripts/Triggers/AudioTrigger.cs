@@ -6,6 +6,7 @@ public class AudioTrigger : MonoBehaviour
 {
     private AudioSource _audioSource;
 
+    public bool TriggerOnce;
     public string TriggerTarget;
     public AudioClip _clipToPlay;
     // Start is called before the first frame update

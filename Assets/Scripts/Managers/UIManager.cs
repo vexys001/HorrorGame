@@ -33,6 +33,9 @@ public class UIManager : MonoBehaviour
         }
         InteractionText = GameObject.Find("InteractionText").GetComponent<TextMeshProUGUI>();
         TaskText = GameObject.Find("TaskText").GetComponent<TextMeshProUGUI>();
+
+        InteractionText.text = "";
+        TaskText.text = "";
     }
 
     public void ChangeInteractionTXT(string interactString)
