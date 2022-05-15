@@ -15,7 +15,13 @@ public class ScareManager : MonoBehaviour
         for (int i = 0; i < ScareHolder.childCount; i++)
         {
             var go = ScareHolder.GetChild(i).gameObject;
-            go.SetActive(false);
+
+            if (!go.GetComponent<Scare>()
+                || go.GetComponent<Scare>() && !go.GetComponent<Scare>().StayActiveOnLoad)
+            {
+                go.SetActive(false);
+            }
+
             ScareDicto.Add(ScareHolder.GetChild(i).name, go);
         }
     }

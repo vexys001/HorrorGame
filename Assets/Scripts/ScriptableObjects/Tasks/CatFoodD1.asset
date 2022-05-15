@@ -17,4 +17,6 @@ MonoBehaviour:
   ObjectsToUnlock:
   - Cat food can
   - Cat
-  ScaresToUnlock: []
+  ScaresToUnlock:
+  - KnockTrigger
+  - KnockAudioSource
