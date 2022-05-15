@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Message: Throw away cigarette pack
   numOfSteps: 1
-  ObjectsToUnlock:
-  - Cigarette Pack
-  - Trash can
+  ObjectsToUnlock: []
   ScaresToUnlock:
   - OfficeMonsterTrigger
   - OfficeMonster
