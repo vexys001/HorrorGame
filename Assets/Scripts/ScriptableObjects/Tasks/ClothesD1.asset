@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: ClothesD1
   m_EditorClassIdentifier: 
   Message: Put your clothes away
-  numOfSteps: 1
+  numOfSteps: 4
   ObjectsToUnlock:
   - Red T-Shirt
+  - Yellow T-Shirt
+  - Black T-Shirt
+  - Light Brown T-Shirt
   - Dresser
   ScaresToUnlock: []
