@@ -20,4 +20,4 @@ MonoBehaviour:
   ScaresToUnlock:
   - MonsterEat
   - MonsterEatTrigger
-  - SmokeTriggerEat
+  - SmokeTrigger01

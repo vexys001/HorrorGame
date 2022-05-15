@@ -22,7 +22,7 @@ MonoBehaviour:
   - Trash can
   ScaresToUnlock:
   - LivingRoomMonsterTrigger
-  - MonsterTextured
+  - MonsterLivingRoom
   - PaintingScareTrigger
   - PaintingScare
   - StaticTrigger
