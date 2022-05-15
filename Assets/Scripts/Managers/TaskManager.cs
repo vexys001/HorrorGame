@@ -36,13 +36,13 @@ public class TaskManager : MonoBehaviour
 
         if(_currentStepNum == _currentTask.numOfSteps)
         {
-            _currentStepNum = 0;
             CompletedCurrentTask();
         }
     }
 
     public void CompletedCurrentTask()
     {
+        _currentStepNum = 0;
         //Lock Previous Items
         InteractbleManager.LockInteractables(_currentTask.ObjectsToUnlock);
 

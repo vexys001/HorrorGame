@@ -20,4 +20,6 @@ MonoBehaviour:
   - Bepsi can
   - Canada Wet can
   - Trash can
-  ScaresToUnlock: []
+  ScaresToUnlock:
+  - KnockTrigger
+  - KnockAudioSource

@@ -17,6 +17,4 @@ MonoBehaviour:
   ObjectsToUnlock:
   - Cat food can
   - Cat
-  ScaresToUnlock:
-  - StaticTrigger
-  - StaticScare
+  ScaresToUnlock: []
