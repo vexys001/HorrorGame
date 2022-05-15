@@ -113,6 +113,8 @@ MonoBehaviour:
   ContextMessage: Throw in
   Locked: 1
   KeyNames:
-  - SodaCanT1
-  - SodaCanT2
+  - Cat Beer can
+  - MTN Dude can
+  - Bepsi can
+  - Canada Wet can
   TaskMngr: {fileID: 0}

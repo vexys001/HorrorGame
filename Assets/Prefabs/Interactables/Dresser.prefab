@@ -62,4 +62,7 @@ MonoBehaviour:
   Locked: 1
   KeyNames:
   - Red T-Shirt
+  - Light Brown T-Shirt
+  - Black T-Shirt
+  - Yellow T-Shirt
   TaskMngr: {fileID: 0}
