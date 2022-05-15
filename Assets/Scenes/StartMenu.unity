@@ -738,6 +738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e54d72f7067b1349b01328729020234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _imageTransition: {fileID: 5218402846867074532, guid: 968bef47093ad1646b8c0908dc5845c9, type: 3}
+  _transTime: 1
 --- !u!1 &1864727716
 GameObject:
   m_ObjectHideFlags: 0
