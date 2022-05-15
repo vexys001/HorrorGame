@@ -4695,6 +4695,10 @@ PrefabInstance:
       propertyPath: NextSceneName
       value: Day03
       objectReference: {fileID: 0}
+    - target: {fileID: 1605552802874134694, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 25874f248e9e0344b86eeb0d04cec420, type: 2}
     - target: {fileID: 3723959663988127780, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
       propertyPath: TaskMngr
       value: 
@@ -4943,6 +4947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39adcd7f4b9effc4d8a24448bc57d04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StayActiveOnLoad: 0
 --- !u!4 &1773988843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f052bb9c333f7641aa03e37ac7089ce, type: 3}
