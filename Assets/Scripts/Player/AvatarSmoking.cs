@@ -40,7 +40,7 @@ public class AvatarSmoking : MonoBehaviour
             CigaretteGO.transform.localPosition = Vector3.zero;
             CigaretteGO.transform.localRotation = Quaternion.Euler(0,0, 180);
 
-            VFXStart = Random.Range(0,10f);
+            VFXStart = Random.Range(4,10f);
             VFXDuration = Random.Range(1,4f);
         }
 

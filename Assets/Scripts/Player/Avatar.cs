@@ -93,19 +93,33 @@ public class Avatar : MonoBehaviour
         }
     }
 
-    void PickUpItem(GameObject item)
+    public void PickUpItem(GameObject item)
     {
-        HeldItem = item;
+        if (!HeldItem)
+        {
+            HeldItem = item;
 
-        HeldItem.transform.parent = ItemHolder;
+            HeldItem.transform.parent = ItemHolder;
 
-        HeldItem.transform.localPosition = Vector3.zero;
-        HeldItem.transform.localRotation = Quaternion.identity;
+            HeldItem.transform.localPosition = Vector3.zero;
+            HeldItem.transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+
+    }
+
+    public GameObject GiveItem()
+    {
+        var temp = HeldItem;
+        HeldItem = null;
+        return temp;
     }
 
     public void DropItem()
     {
-        Destroy(HeldItem);
+        HeldItem.transform.parent = null;
+        HeldItem.transform.localPosition = new Vector3(100f, 100f, 100f);
+
+        HeldItem = null;
     }
 
     private void OnDrawGizmos()

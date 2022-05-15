@@ -44,6 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c133591036fb13941879af639916522c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TaskList: []
-  _currentTask: {fileID: 0}
-  _currentTaskNum: 0
+  TaskList:
+  - {fileID: 11400000, guid: 301e31e91025f3a49a3d6c8eee5ffb67, type: 2}
+  - {fileID: 11400000, guid: 0e498519d4736e84e900d4ff039816ef, type: 2}
+  - {fileID: 11400000, guid: 40d4cd259ad5d9b44925dd399661229d, type: 2}
+  - {fileID: 11400000, guid: e7f2381177ece5446a98974ecfb2fb22, type: 2}
+  - {fileID: 11400000, guid: 106ede3f9048ed0478ed11d28abfb9e7, type: 2}
+  - {fileID: 11400000, guid: f88ccf364e2b3bf4588d8b92660b630b, type: 2}
+  InteractbleManager: {fileID: 0}
+  ScareMngr: {fileID: 0}

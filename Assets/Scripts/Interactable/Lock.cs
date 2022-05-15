@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Lock : Interactable
 {
-    public string KeyName;
+    public string[] KeyNames;
     public TaskManager TaskMngr;
 
     // Start is called before the first frame update
@@ -22,12 +23,11 @@ public class Lock : Interactable
     public override void Interact(GameObject origin)
     {
         Avatar player = origin.GetComponent<Avatar>();
-        if (player.HeldItem && player.HeldItem.name == KeyName)
+        if (player.HeldItem && Array.Exists(KeyNames, verif => verif == player.HeldItem.name))
         {
-            TaskMngr.CompletedCurrentTask();
+            TaskMngr.CompletedSubTask();
 
             player.DropItem();
-            Locked = true;
         }
     }
 }
