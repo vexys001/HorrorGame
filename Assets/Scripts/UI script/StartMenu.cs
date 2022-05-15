@@ -12,16 +12,14 @@ public class StartMenu : MonoBehaviour
 
     public void LoadScene()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-        
+        StartCoroutine(LoadLevel("Day01"));
     }
 
-    IEnumerator LoadLevel(int level)
+    IEnumerator LoadLevel(string levelName)
     {
-        level = 3;
         _imageTransition.SetTrigger("start");
         yield return new WaitForSeconds(_transTime);
-        SceneManager.LoadScene(level);
+        SceneManager.LoadScene(levelName);
     }
 
     public void QuitScene()
