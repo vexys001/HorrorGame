@@ -155,5 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1337f012b1ebca409cf8fc538113569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TriggerOnce: 0
   TriggerTarget: 
   _clipToPlay: {fileID: 0}
