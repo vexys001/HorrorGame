@@ -18,5 +18,5 @@ MonoBehaviour:
   - Cat food can
   - Cat
   ScaresToUnlock:
-  - KnockTrigger
-  - KnockAudioSource
+  - StaticTrigger
+  - StaticScare
