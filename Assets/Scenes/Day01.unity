@@ -5284,6 +5284,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2048488837, guid: 5e55062c1ae7ee44aa05f240c6599f19, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048488837, guid: 5e55062c1ae7ee44aa05f240c6599f19, type: 3}
+      propertyPath: m_fontColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048488837, guid: 5e55062c1ae7ee44aa05f240c6599f19, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.99433964
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048488837, guid: 5e55062c1ae7ee44aa05f240c6599f19, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.99433964
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048488837, guid: 5e55062c1ae7ee44aa05f240c6599f19, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048488837, guid: 5e55062c1ae7ee44aa05f240c6599f19, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048488837, guid: 5e55062c1ae7ee44aa05f240c6599f19, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 2701065983
+      objectReference: {fileID: 0}
     - target: {fileID: 569797429001786810, guid: 5e55062c1ae7ee44aa05f240c6599f19, type: 3}
       propertyPath: m_Name
       value: Canvas
