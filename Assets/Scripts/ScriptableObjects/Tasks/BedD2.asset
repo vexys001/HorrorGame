@@ -16,4 +16,6 @@ MonoBehaviour:
   numOfSteps: 1
   ObjectsToUnlock:
   - Bed
-  ScaresToUnlock: []
+  ScaresToUnlock:
+  - ShadowTrigger
+  - Shadow

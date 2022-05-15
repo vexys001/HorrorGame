@@ -20,4 +20,6 @@ MonoBehaviour:
   - Black T-Shirt
   - Light Brown T-Shirt
   - Dresser
-  ScaresToUnlock: []
+  ScaresToUnlock:
+  - ScreamTrigger
+  - ScreamAudioSource
