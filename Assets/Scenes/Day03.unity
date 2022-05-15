@@ -5469,10 +5469,6 @@ PrefabInstance:
       propertyPath: TaskMngr
       value: 
       objectReference: {fileID: 1109943266}
-    - target: {fileID: 597450577164301775, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
-      propertyPath: NextSceneName
-      value: GameOverMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 3723959663988127780, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
       propertyPath: TaskMngr
       value: 
@@ -5491,6 +5487,11 @@ PrefabInstance:
       objectReference: {fileID: 1109943266}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
+--- !u!4 &2117148325 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 597450575943952319, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
+  m_PrefabInstance: {fileID: 2117148324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2130789211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2804400578508571715, guid: 8e72b6802e3b77746b53e04b2fed6ebb, type: 3}
@@ -7113,7 +7114,7 @@ PrefabInstance:
     - target: {fileID: 3110721144650380575, guid: d0291a304f083a249a70b55946e6633c, type: 3}
       propertyPath: InteractableHolder
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2117148325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0291a304f083a249a70b55946e6633c, type: 3}
 --- !u!1001 &3174938747435998318

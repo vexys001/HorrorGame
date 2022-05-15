@@ -98,7 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1790857300874086012, guid: 742b8784b53b67d438fdd5af10bf2fbb, type: 3}
       propertyPath: m_Name
-      value: SodaCanT3
+      value: Bepsi can
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742b8784b53b67d438fdd5af10bf2fbb, type: 3}
@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 887740027388034540, guid: 470fbbfc51456004f8750cb633bb3e5c, type: 3}
       propertyPath: m_Name
-      value: SodaCanT2
+      value: MTN Dude can
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 470fbbfc51456004f8750cb633bb3e5c, type: 3}
@@ -222,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5309434008624503402, guid: fed602731f4213b439701f4724151894, type: 3}
       propertyPath: m_Name
-      value: SodaCanT1
+      value: Cat Beer can
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fed602731f4213b439701f4724151894, type: 3}
@@ -421,7 +421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 312642953842535270, guid: ea6103fa6318d6d4e9ef19be6bd97fc3, type: 3}
       propertyPath: NextSceneName
-      value: Day02
+      value: GameOverMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea6103fa6318d6d4e9ef19be6bd97fc3, type: 3}
@@ -549,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9006327749601171275, guid: d2170310095708b4b9e7522c956b88e8, type: 3}
       propertyPath: m_Name
-      value: SodaCanT4
+      value: Canada Wet can
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2170310095708b4b9e7522c956b88e8, type: 3}

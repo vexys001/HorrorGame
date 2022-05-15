@@ -4712,6 +4712,11 @@ PrefabInstance:
       objectReference: {fileID: 1109943266}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
+--- !u!4 &1611214594 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 597450575943952319, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
+  m_PrefabInstance: {fileID: 1611214593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1660720382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7113,7 +7118,7 @@ PrefabInstance:
     - target: {fileID: 3110721144650380575, guid: d0291a304f083a249a70b55946e6633c, type: 3}
       propertyPath: InteractableHolder
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1611214594}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0291a304f083a249a70b55946e6633c, type: 3}
 --- !u!1001 &3174938747435998318

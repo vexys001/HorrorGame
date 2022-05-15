@@ -15,7 +15,9 @@ MonoBehaviour:
   Message: Throw away soda cans
   numOfSteps: 2
   ObjectsToUnlock:
-  - SodaCanT1
-  - SodaCanT2
+  - Cat Beer can
+  - MTN Dude can
+  - Bepsi can
+  - Canada Wet can
   - Trash can
   ScaresToUnlock: []
