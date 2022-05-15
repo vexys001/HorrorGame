@@ -109,7 +109,9 @@ public class Avatar : MonoBehaviour
 
     public GameObject GiveItem()
     {
-        return HeldItem;
+        var temp = HeldItem;
+        HeldItem = null;
+        return temp;
     }
 
     public void DropItem()
