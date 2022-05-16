@@ -10,6 +10,11 @@ public class StartMenu : MonoBehaviour
     [SerializeField]
     private float _transTime = 1f;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void LoadScene()
     {
         StartCoroutine(LoadLevel("Day01"));

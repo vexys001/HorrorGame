@@ -548,7 +548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '::credit ::
+  m_text: ':: Credits ::
 
     Yves Morin
 
