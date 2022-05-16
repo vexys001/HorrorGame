@@ -2408,7 +2408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StayActiveOnLoad: 0
   Rendrr: {fileID: 0}
-  Duration: 5
+  Duration: 6
 --- !u!4 &747784441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4311916961535792575, guid: 12598a014715ea24aa6e31167a93c6db, type: 3}
@@ -5469,6 +5469,10 @@ PrefabInstance:
     - target: {fileID: 597450577164301775, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
       propertyPath: NextSceneName
       value: Day03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559696330523053649, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1605552802874134694, guid: 93b0ad23637473f4a98dd2d1c447075a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10116,7 +10120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1189120917443194025, guid: cf4e59b7ff5742e4ead372b1b53a898c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.969
+      value: 2.074
       objectReference: {fileID: 0}
     - target: {fileID: 1189120917443194025, guid: cf4e59b7ff5742e4ead372b1b53a898c, type: 3}
       propertyPath: m_LocalPosition.y
